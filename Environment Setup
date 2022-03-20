@@ -1,0 +1,36 @@
+install Anaconda…
+
+#list the environments in anaconda-
+
+(base) username ~ % conda env list
+conda environments:
+base                  *  /Users/junetao/opt/anaconda3
+py2                      /Users/junetao/opt/anaconda3/envs/py2
+
+#then create environment as OpenCV-
+
+$ conda create --name Opencv python=3.7 anaconda
+
+#then activate OpenCV-
+
+$ conda activate Opencv
+
+# install OpenCV
+
+$ conda install -c anaconda OpenCV
+
+# install tensorflow
+
+$ conda install -c anaconda tensorflow
+
+# install Keras
+
+$ conda install -c anaconda keras
+
+# open Jupiter lab from command prompt
+
+$ jupyter lab .
+
+# Same thing as create, you have to specify the name of the environment you wish to remove by using --name.
+
+(base) username ~ % conda env remove --name OpenCV
